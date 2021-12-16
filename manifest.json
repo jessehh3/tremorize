@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tremorize",
+    "description": "This extension will simulate a hand tremor.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "hand.png"
+    },
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+      ]
+}
